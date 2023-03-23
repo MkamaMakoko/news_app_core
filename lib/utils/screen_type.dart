@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:news_app_core/utils/screen_width.dart';
 
 enum ScreenType { mobile, desktop }
 
 ScreenType screenType(BuildContext context) {
-  final width = MediaQuery.of(context).size.width;
-  if (width <= _mobileScreenSizeLimit) return ScreenType.mobile;
+  if (screenWidth(context) <= _mobileScreenSizeLimit) return ScreenType.mobile;
   return ScreenType.desktop;
 }
 

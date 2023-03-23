@@ -1,6 +1,6 @@
 name: news_app_core
 description: A new Flutter package project.
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
@@ -8,12 +8,12 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  auto_route: ^6.0.0+1
+  # auto_route: ^6.0.0+1
   cloud_firestore: ^4.4.4
   firebase_auth: ^4.2.10
   firebase_core: ^2.7.1
   firebase_storage: ^11.0.15
-  flex_color_scheme: ^6.1.2
+  # flex_color_scheme: ^6.1.2
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.3.2

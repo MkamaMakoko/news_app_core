@@ -1,7 +1,10 @@
 library news_app_core;
 
-export 'package:auto_route/auto_route.dart';
-export 'package:auto_route/annotations.dart';
-export 'package:flutter_riverpod/flutter_riverpod.dart';
-export 'package:flex_color_scheme/flex_color_scheme.dart';
-export 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+
+
+Future<void> initializeApp() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+}
